@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Rock, Paper and Scissor</title>
+  </head>
+  <body>
+    <div class="text-white bg-dark text-center p-3">
+      <h2>Rock, Paper and Scissor</h2>
+    </div>
+    <div class="score_panel">
+      <div class="panel">
+        <div class="panel_title">Win</div>
+        <div class="panel_score">0</div>
+      </div>
+      <div class="panel">
+        <div class="panel_title">Tie</div>
+        <div class="panel_score">0</div>
+      </div>
+      <div class="panel">
+        <div class="panel_title">Loose</div>
+        <div class="panel_score">0</div>
+      </div>
+    </div>
+    <div class="play_area">
+      <div class="player_hand">
+        <img src="./scissor.svg" width="300" />
+      </div>
+      <div class="result_area">
+        You win! 😎
+        <!-- 😓 -->
+      </div>
+      <div class="opponent_hand">
+        <img src="./paper.svg" width="300" />
+      </div>
+    </div>
+    <div class="controls">
+      <h3>Choose your hand</h3>
+      <img src="./rock.svg" width="100" alt="paper" srcset="" />
+      <img src="./paper.svg" width="100" alt="paper" srcset="" />
+      <img src="./scissor.svg" width="100" alt="paper" srcset="" />
+    </div>
+  </body>
+</html>

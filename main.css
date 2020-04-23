@@ -1,0 +1,62 @@
+.score_panel {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.panel {
+  text-align: center;
+  padding: 10px;
+}
+
+.panel_title {
+  font-size: 20px;
+}
+
+.panel_score {
+  font-size: 40px;
+}
+
+.play_area {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+
+.player_hand > img {
+  transform: rotateY(180deg);
+}
+
+.player_hand,
+.opponent_hand {
+  padding: 10px;
+}
+
+.controls {
+  text-align: center;
+}
+
+.controls > img {
+  background-color: rgb(206, 0, 0);
+  border: 0px solid black;
+  padding: 5px;
+  border-radius: 50px;
+  margin: 5px 40px;
+  transition: all 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.404);
+}
+
+.controls > img:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.404);
+}
+
+.result_area {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+}
