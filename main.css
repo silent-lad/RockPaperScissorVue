@@ -38,17 +38,17 @@
   text-align: center;
 }
 
-.controls > img {
+.controls > button {
   background-color: rgb(206, 0, 0);
   border: 0px solid black;
   padding: 5px;
-  border-radius: 50px;
+  border-radius: 55px;
   margin: 5px 40px;
   transition: all 0.3s;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.404);
 }
 
-.controls > img:hover {
+.controls > button:hover {
   transform: scale(1.1);
   box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.404);
 }
