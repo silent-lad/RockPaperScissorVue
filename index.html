@@ -34,19 +34,17 @@
       </div>
       <div class="play_area">
         <div class="player_hand">
-          <img src="./scissor.svg" width="300" />
+          <img :src="imagePath" width="300" />
         </div>
-        <div class="result_area">
-          You win! 😎
-          <!-- 😓 -->
+        <div class="result_area text-center">
+          {{resultText}}
         </div>
         <div class="opponent_hand">
-          <img src="./paper.svg" width="300" />
+          <img :src="computerImagePath" width="300" />
         </div>
       </div>
       <div class="controls">
         <h3>Choose your hand</h3>
-        <p>{{currentTurn}}</p>
         <button @click="choose('rock')">
           <img src="./rock.svg" width="100" alt="rock" srcset="" />
         </button>
