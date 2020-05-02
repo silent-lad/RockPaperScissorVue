@@ -10,49 +10,54 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>Rock, Paper and Scissor</title>
   </head>
   <body>
     <div class="text-white bg-dark text-center p-3 header">
       <h2>Rock, Paper and Scissor</h2>
     </div>
-    <div class="score_panel">
-      <div class="panel bg-primary">
-        <div class="panel_title">Win</div>
-        <div class="panel_score">0</div>
+    <div id="app">
+      <div class="score_panel">
+        <div class="panel bg-primary">
+          <div class="panel_title">Win</div>
+          <div class="panel_score">{{winCount}}</div>
+        </div>
+        <div class="panel bg-primary">
+          <div class="panel_title">Tie</div>
+          <div class="panel_score">{{tieCount}}</div>
+        </div>
+        <div class="panel bg-primary">
+          <div class="panel_title">Loose</div>
+          <div class="panel_score">{{looseCount}}</div>
+        </div>
       </div>
-      <div class="panel bg-primary">
-        <div class="panel_title">Tie</div>
-        <div class="panel_score">0</div>
+      <div class="play_area">
+        <div class="player_hand">
+          <img src="./scissor.svg" width="300" />
+        </div>
+        <div class="result_area">
+          You win! 😎
+          <!-- 😓 -->
+        </div>
+        <div class="opponent_hand">
+          <img src="./paper.svg" width="300" />
+        </div>
       </div>
-      <div class="panel bg-primary">
-        <div class="panel_title">Loose</div>
-        <div class="panel_score">0</div>
+      <div class="controls">
+        <h3>Choose your hand</h3>
+        <p>{{currentTurn}}</p>
+        <button @click="choose('rock')">
+          <img src="./rock.svg" width="100" alt="rock" srcset="" />
+        </button>
+        <button @click="choose('paper')">
+          <img src="./paper.svg" width="100" alt="paper" srcset="" />
+        </button>
+        <button @click="choose('scissor')">
+          <img src="./scissor.svg" width="100" alt="scissor" srcset="" />
+        </button>
       </div>
     </div>
-    <div class="play_area">
-      <div class="player_hand">
-        <img src="./scissor.svg" width="300" />
-      </div>
-      <div class="result_area">
-        You win! 😎
-        <!-- 😓 -->
-      </div>
-      <div class="opponent_hand">
-        <img src="./paper.svg" width="300" />
-      </div>
-    </div>
-    <div class="controls">
-      <h3>Choose your hand</h3>
-      <button>
-        <img src="./rock.svg" width="100" alt="paper" srcset="" />
-      </button>
-      <button>
-        <img src="./paper.svg" width="100" alt="paper" srcset="" />
-      </button>
-      <button>
-        <img src="./scissor.svg" width="100" alt="paper" srcset="" />
-      </button>
-    </div>
+    <script src="./main.js"></script>
   </body>
 </html>
